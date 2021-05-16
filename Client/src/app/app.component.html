@@ -1,0 +1,117 @@
+
+<!-- Header -->
+<div class="header">
+  <h4>BRAND BELIEF SCORE</h4>
+  <h1 class="val">0.524</h1>
+</div>
+<div>
+  <mat-tab-group mat-align-tabs="start">
+    <mat-tab label="VALUES"></mat-tab>
+    <mat-tab label="BREAKDOWN" ></mat-tab>
+  </mat-tab-group>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <div class="filter-title">FILTER</div>
+    <div class="panel-group panl" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+            Gender</a>
+            
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body">
+            <div>
+              <div>Male</div>
+              <div class="progress border">
+                <div class="progress-bar bg-light" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:20%;">
+                  69
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm shw-btn" (click)="fetchData('male')">Show</button>
+            </div>
+            <div class="tab">
+              <div>Female</div>
+              <div class="progress border">
+                <div class="progress-bar bg-light" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:45%;">
+                  127
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm shw-btn" (click)="fetchData('female')">Show</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+            Household Size</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+            Attitude</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+            Social Media</a>
+          </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+  <div >
+    <fusioncharts
+    [width]="highOrderChartWidth"
+    [height]="highOrderChartHeight"
+    [type]="highOrderChartType"
+    [dataFormat]="highOrderChartDataFormat"
+    [dataSource]="highOrderChartDataSource"
+    >
+    </fusioncharts>
+  </div>
+  <div>
+    <fusioncharts
+    [width]="valuesChartWidth"
+    [height]="valuesChartHeight"
+    [type]="valuesChartType"
+    [dataFormat]="valuesChartDataFormat"
+    [dataSource]="valuesChartDataSource"
+    >
+    </fusioncharts>
+  </div>
+  
+  </div>
+</div>

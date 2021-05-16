@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+  }
+
+ 
+  
+  /* Header/logo Title */
+  .header {
+    padding: 25px 1px 1px 1px;
+    text-align: center;
+    background: black;
+    color: white;
+  }
+
+  
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 17%;
+    background-color: black;
+  }
+  
+  /* Main column */
+  .main {
+    flex: 83%;
+    background-color: black;
+    padding: 20px 20px 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+.mat-tab-labels {
+    justify-content: space-around;
+    background-color: black;
+}
+.mat-tab-label{
+    width: 750px;
+    padding: 0px 0px 0px 0px;
+}
+
+.mat-tab-label .mat-tab-label-content {
+    color: white
+}
+
+.mat-tab-nav-bar, .mat-tab-header {
+    border-bottom: 1px solid black;
+}
+.chart {
+  background-color: black;
+}
+.panel-group .panel {
+  background-color: black;
+}
+
+.panel-default>.panel-heading {
+  background-color: black;
+}
+.shw-btn{
+  float: right;
+}
+
+.tab{
+  margin-top: 46px;
+}
+
+.panl{
+  margin: 8px 0px 0px 50px;
+}
+
+.val{
+  align-self: center;
+}
+.title{
+  color: white;
+}
+
+.panel-title{
+  text-align: center;
+}
+
+.filter-title {
+  margin: 80px 0px 0px 50px;
+  color: white
+}
